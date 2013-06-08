@@ -10,4 +10,11 @@
 
 @implementation TestCommand
 
+- (ECCommandLineResult)didProcessWithArguments:(NSMutableArray *)arguments
+{
+	NSLog(@"test command processed with arguments %@", [arguments componentsJoinedByString:@","]);
+
+	return ECCommandLineResultOK;
+}
+
 @end
