@@ -4,10 +4,6 @@
 //  liberal license: http://www.elegantchaos.com/license/liberal
 // --------------------------------------------------------------------------
 
-#define EC_{{uppercase(name)}} 1
+#import <ECLogging/ECLoggingRelease.pch>
 
-#ifdef __OBJC__
-
-#import <ECLogging/ECLogging.h>
-
-#endif
+#import "ECCommandLineTestShared.pch"
