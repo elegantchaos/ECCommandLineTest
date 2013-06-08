@@ -18,11 +18,10 @@ int main(int argc, const char * argv[])
 		ECEnableChannel(CommandLineEngineChannel);
 		
 		ECCommandLineEngine* cl = [[ECCommandLineEngine alloc] init];
-		result = [cl processArgumentCount:argc arguments:argv];
+		result = [cl processArguments:argc argv:argv];
 		if (result == 0)
 		{
 			result = NSApplicationMain(argc, argv);
-			//			[[NSRunLoop mainRunLoop] run];
 		}
     }
 

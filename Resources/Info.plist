@@ -46,20 +46,65 @@
 	<string>NSApplication</string>
 	<key>Commands</key>
 	<dict>
-		<key>Test</key>
+		<key>command1</key>
 		<dict>
+			<key>class</key>
+			<string>TestCommand</string>
 			<key>help</key>
-			<string>test blah blah</string>
-			<key>arguments</key>
+			<string>first command</string>
+			<key>options</key>
 			<dict>
-				<key>testArg</key>
-				<dict>
-					<key>short</key>
-					<string>t</string>
-					<key>help</key>
-					<string>blah</string>
-				</dict>
+				<key>required</key>
+				<array>
+					<string>string</string>
+					<string>number</string>
+				</array>
+				<key>optional</key>
+				<array>
+					<string>boolean</string>
+				</array>
 			</dict>
+		</dict>
+	</dict>
+	<key>Options</key>
+	<dict>
+		<key>string</key>
+		<dict>
+			<key>short</key>
+			<string>s</string>
+			<key>mode</key>
+			<string>required</string>
+			<key>help</key>
+			<string>a string argument</string>
+		</dict>
+		<key>string2</key>
+		<dict>
+			<key>short</key>
+			<string>t</string>
+			<key>default</key>
+			<string>default value</string>
+			<key>mode</key>
+			<string>required</string>
+			<key>help</key>
+			<string>another string argument with a default value</string>
+		</dict>
+		<key>number</key>
+		<dict>
+			<key>short</key>
+			<string>n</string>
+			<key>mode</key>
+			<string>required</string>
+			<key>help</key>
+			<string>a number argument</string>
+		</dict>
+		<key>boolean</key>
+		<dict>
+			<key>short</key>
+			<string>b</string>
+			<key>mode</key>
+			<string>optional</string>
+			<key>help</key>
+			<string>a boolean argument</string>
 		</dict>
 	</dict>
 </dict>

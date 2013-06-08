@@ -11,6 +11,7 @@
 		2230CD9F176365580026AA5E /* libECCommandLine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2230CD9E176365580026AA5E /* libECCommandLine.a */; };
 		2230CDA1176365610026AA5E /* libECLogging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2230CDA0176365610026AA5E /* libECLogging.a */; };
 		2230CDAA17636C750026AA5E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2230CDA917636C750026AA5E /* Cocoa.framework */; };
+		22683E7B1763A3E4006E6295 /* TestCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 22683E7A1763A3E4006E6295 /* TestCommand.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,8 @@
 		2260A31315DFD96D0057C9DA /* MacUnitTestRelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = MacUnitTestRelease.xcconfig; sourceTree = "<group>"; };
 		2260A39615DFDC600057C9DA /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 		2260A3AC15DFEF4F0057C9DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = SOURCE_ROOT; };
+		22683E791763A3E4006E6295 /* TestCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCommand.h; sourceTree = "<group>"; };
+		22683E7A1763A3E4006E6295 /* TestCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCommand.m; sourceTree = "<group>"; };
 		226C205C14FBCB8F00D2751B /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
 		229628EE176343D2008D887F /* ECCommandLineTestDebug.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECCommandLineTestDebug.pch; sourceTree = "<group>"; };
 		229628EF176343D2008D887F /* ECCommandLineTestRelease.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECCommandLineTestRelease.pch; sourceTree = "<group>"; };
@@ -134,6 +137,8 @@
 			children = (
 				2230CD991763645E0026AA5E /* ECCommandLineTest.1 */,
 				2230CD9A1763645E0026AA5E /* main.m */,
+				22683E791763A3E4006E6295 /* TestCommand.h */,
+				22683E7A1763A3E4006E6295 /* TestCommand.m */,
 			);
 			path = Mac;
 			sourceTree = "<group>";
@@ -195,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2230CD9B1763645E0026AA5E /* main.m in Sources */,
+				22683E7B1763A3E4006E6295 /* TestCommand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

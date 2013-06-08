@@ -111,7 +111,7 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "testCommand testWord testWord2 --testArg -abc --testString=&quot;string&quot; --testNumber=1 -- --more -args"
+            argument = "command1 testWord testWord2 --string=&quot;test&quot; --number=123 -b -- --more -args testword3"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
