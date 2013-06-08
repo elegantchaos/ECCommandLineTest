@@ -9,7 +9,7 @@
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
-	<string>com.elegantchaos.frameworks.eccore</string>
+	<string>com.elegantchaos.commandlinetest</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -42,5 +42,25 @@
 	<string></string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2013 Elegant Chaos. All rights reserved.</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+	<key>Commands</key>
+	<dict>
+		<key>Test</key>
+		<dict>
+			<key>help</key>
+			<string>test blah blah</string>
+			<key>arguments</key>
+			<dict>
+				<key>testArg</key>
+				<dict>
+					<key>short</key>
+					<string>t</string>
+					<key>help</key>
+					<string>blah</string>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
 </dict>
 </plist>

@@ -15,12 +15,14 @@ int main(int argc, const char * argv[])
 
     @autoreleasepool {
 
-
+		ECEnableChannel(CommandLineEngineChannel);
+		
 		ECCommandLineEngine* cl = [[ECCommandLineEngine alloc] init];
 		result = [cl processArgumentCount:argc arguments:argv];
 		if (result == 0)
 		{
-			[[NSRunLoop mainRunLoop] run];
+			result = NSApplicationMain(argc, argv);
+			//			[[NSRunLoop mainRunLoop] run];
 		}
     }
 
