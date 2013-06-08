@@ -11,18 +11,21 @@
 
 int main(int argc, const char * argv[])
 {
-	NSInteger result;
+	ECCommandLineResult result;
 
     @autoreleasepool {
 
-		ECEnableChannel(CommandLineEngineChannel);
+		//		ECEnableChannel(CommandLineEngineChannel);
 		
 		ECCommandLineEngine* cl = [[ECCommandLineEngine alloc] init];
 		result = [cl processArguments:argc argv:argv];
-		if (result == 0)
+		if (result == ECCommandLineResultOK)
 		{
 			result = NSApplicationMain(argc, argv);
 		}
+
+		if (result == ECCommandLineResultOKButTerminate)
+			result = ECCommandLineResultOK;
     }
 
     return (int)result;

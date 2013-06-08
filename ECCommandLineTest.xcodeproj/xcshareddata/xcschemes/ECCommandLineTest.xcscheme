@@ -112,7 +112,7 @@
       <CommandLineArguments>
          <CommandLineArgument
             argument = "command1 testWord testWord2 --string=&quot;test&quot; --number=123 -b -- --more -args testword3"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </CommandLineArgument>
       </CommandLineArguments>
       <AdditionalOptions>
