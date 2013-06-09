@@ -128,6 +128,10 @@
             argument = "command1 testWord testWord2 --string=&quot;test&quot; --number=123 -b -- --more -args testword3"
             isEnabled = "NO">
          </CommandLineArgument>
+         <CommandLineArgument
+            argument = "--version"
+            isEnabled = "YES">
+         </CommandLineArgument>
       </CommandLineArguments>
       <AdditionalOptions>
       </AdditionalOptions>

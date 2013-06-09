@@ -11,23 +11,24 @@
 
 int main(int argc, const char * argv[])
 {
-	ECCommandLineResult result;
-
+	int result;
     @autoreleasepool {
 
-		//		ECEnableChannel(CommandLineEngineChannel);
-		
 		ECCommandLineEngine* cl = [[ECCommandLineEngine alloc] init];
-		result = [cl processArguments:argc argv:argv];
-		if (result == ECCommandLineResultOK)
-		{
-			result = NSApplicationMain(argc, argv);
-		}
+		[[NSOperationQueue mainQueue] addOperationWithBlock:^{
+			ECCommandLineResult processResult = [cl processArguments:argc argv:argv];
+			if (processResult != ECCommandLineResultOK)
+			{
+				if (processResult == ECCommandLineResultOKButTerminate)
+					processResult = ECCommandLineResultOK;
 
-		if (result == ECCommandLineResultOKButTerminate)
-			result = ECCommandLineResultOK;
+				exit(processResult);
+			}
+		}];
+
+		result = NSApplicationMain(argc, argv);
     }
 
-    return (int)result;
+    return result;
 }
 
