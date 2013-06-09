@@ -1,5 +1,5 @@
 //
-//  TestCommand.h
+//  SaveCommand.h
 //  ECCommandLineTest
 //
 //  Created by Sam Deane on 08/06/2013.
@@ -8,6 +8,6 @@
 
 #import <ECCommandLine/ECCommandLine.h>
 
-@interface TestCommand : ECCommandLineCommand
+@interface SaveCommand : ECCommandLineCommand
 
 @end
