@@ -10,10 +10,8 @@
 		2230CD9B1763645E0026AA5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2230CD9A1763645E0026AA5E /* main.m */; };
 		2230CD9F176365580026AA5E /* libECCommandLine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2230CD9E176365580026AA5E /* libECCommandLine.a */; };
 		2230CDA1176365610026AA5E /* libECLogging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2230CDA0176365610026AA5E /* libECLogging.a */; };
-		2230CDAA17636C750026AA5E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2230CDA917636C750026AA5E /* Cocoa.framework */; };
 		225DECCA17649FAF000056F4 /* SaveCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 225DECC917649F4A000056F4 /* SaveCommand.m */; };
 		225DECCC1764A064000056F4 /* libECCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 225DECCB1764A064000056F4 /* libECCore.a */; };
-		225DECCE1764A0B4000056F4 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225DECCD1764A0B4000056F4 /* IOKit.framework */; };
 		22683E7B1763A3E4006E6295 /* LoadCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 22683E7A1763A3E4006E6295 /* LoadCommand.m */; };
 /* End PBXBuildFile section */
 
@@ -59,9 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				225DECCE1764A0B4000056F4 /* IOKit.framework in Frameworks */,
 				225DECCC1764A064000056F4 /* libECCore.a in Frameworks */,
-				2230CDAA17636C750026AA5E /* Cocoa.framework in Frameworks */,
 				2230CDA1176365610026AA5E /* libECLogging.a in Frameworks */,
 				2230CD9F176365580026AA5E /* libECCommandLine.a in Frameworks */,
 			);

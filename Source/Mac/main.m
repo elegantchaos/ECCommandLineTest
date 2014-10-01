@@ -11,7 +11,6 @@
 
 int main(int argc, const char * argv[])
 {
-	int result;
     @autoreleasepool {
 
 		ECCommandLineEngine* cl = [[ECCommandLineEngine alloc] init];
@@ -26,9 +25,10 @@ int main(int argc, const char * argv[])
 			}
 		}];
 
-		result = NSApplicationMain(argc, argv);
     }
 
-    return result;
+	CFRunLoopRun();
+
+    return 0;
 }
 
